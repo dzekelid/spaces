@@ -1,9 +1,11 @@
+---
 swagger: "2.0"
 x-collection-name: AWS WorkSpaces
-x-complete: 1
+x-complete: 0
 info:
-  title: AWS WorkSpaces Service API
+  title: AWS WorkSpaces Service API Describe Workspaces
   version: 1.0.0
+  description: Obtains information about the specified WorkSpaces.
 schemes:
 - http
 produces:
@@ -88,83 +90,17 @@ paths:
           description: OK
       tags:
       - Workspaces
-  /?Action=RebootWorkspaces:
-    get:
-      summary: Reboot Workspaces
-      description: Reboots the specified WorkSpaces.
-      operationId: rebootWorkspaces
-      x-api-path-slug: actionrebootworkspaces-get
-      parameters:
-      - in: query
-        name: RebootWorkspaceRequests
-        description: An array of structures that specify the WorkSpaces to reboot
-        type: string
-      responses:
-        200:
-          description: OK
-      tags:
-      - Workspaces
-  /?Action=RebuildWorkspaces:
-    get:
-      summary: Rebuild Workspaces
-      description: Rebuilds the specified WorkSpaces.
-      operationId: rebuildWorkspaces
-      x-api-path-slug: actionrebuildworkspaces-get
-      parameters:
-      - in: query
-        name: RebuildWorkspaceRequests
-        description: An array of structures that specify the WorkSpaces to rebuild
-        type: string
-      responses:
-        200:
-          description: OK
-      tags:
-      - Workspaces
-  /?Action=StartWorkspaces:
-    get:
-      summary: Start Workspaces
-      description: Starts the specified WorkSpaces.
-      operationId: startWorkspaces
-      x-api-path-slug: actionstartworkspaces-get
-      parameters:
-      - in: query
-        name: StartWorkspaceRequests
-        description: The requests
-        type: string
-      responses:
-        200:
-          description: OK
-      tags:
-      - Workspaces
-  /?Action=StopWorkspaces:
-    get:
-      summary: Stop Workspaces
-      description: Stops the specified WorkSpaces.
-      operationId: stopWorkspaces
-      x-api-path-slug: actionstopworkspaces-get
-      parameters:
-      - in: query
-        name: StopWorkspaceRequests
-        description: The requests
-        type: string
-      responses:
-        200:
-          description: OK
-      tags:
-      - Workspaces
-  /?Action=TerminateWorkspaces:
-    get:
-      summary: Terminate Workspaces
-      description: Terminates the specified WorkSpaces.
-      operationId: terminateWorkspaces
-      x-api-path-slug: actionterminateworkspaces-get
-      parameters:
-      - in: query
-        name: TerminateWorkspaceRequests
-        description: An array of structures that specify the WorkSpaces to terminate
-        type: string
-      responses:
-        200:
-          description: OK
-      tags:
-      - Workspaces
+x-streamrank:
+  polling_total_time_average: 0
+  polling_size_download_average: 0
+  streaming_total_time_average: 0
+  streaming_size_download_average: 0
+  change_yes: 0
+  change_no: 0
+  time_percentage: 0
+  size_percentage: 0
+  change_percentage: 0
+  last_run: ""
+  days_run: 0
+  minute_run: 0
+---
